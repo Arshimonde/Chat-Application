@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Camions Chat</title>
+     <!-- STYLES -->
+     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+     <link rel="stylesheet" href="css/style.css">
+
+     <!--JavaScript SCRIPTS -->
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+     <!--MAIN CONTAINER-->
+     <div class="container-fluid">
+          <div class="row">
+               <!--CLIENT CHATING WITH INFO-->
+               <section id="client-info" class="col-md-3 col-lg-3 ">
+               </section>
+               <!--CHAT INBOX-->
+               <section id="inbox" class=" col-md-6 col-lg-6">
+               </section>
+               <!--ONLINE/OFFLINE PEOPLE-->
+               <section id="people" class="col-md-3 col-lg-3 ">
+                    <h1 class="text-center">
+                         <i class="glyphicon glyphicon-comment secondary-color"></i> Camions Chat
+                    </h1>
+                    <ul class="list-group">
+                         <li class="list-group-item friend">
+                              <div class="profile-image">
+                                   <img class="img-responsive" width="50" height="50" src="images/Albert_Einstein_Head.jpg" alt="Albert Einstein">
+                              </div>
+                              <div class="friend-info">
+                                   <div class="name-time">
+                                        <span class="show name text-ellipsis primary-color font-bold">
+                                             Dapibus ac facilisis in
+                                        </span>
+                                        <div class="last-message-time">30/07/2018 </div>
+                                   </div>
+                                   <p class="last-message text-ellipsis">lorum ipsum dorum lorum ipsum dorum lorum ipsum dorum lorum ipsum dorum ipsum dorum</p>
+                                   <span class="label label-success">online</span>
+                              </div>
+                         </li>
+                         <li class="list-group-item friend">
+                              <div class="profile-image">
+                                   <img class="img-responsive" width="50" height="50" src="images/Albert_Einstein_Head.jpg" alt="Albert Einstein">
+                              </div>
+                              <div class="friend-info">
+                                   <div class="name-time">
+                                        <span class="show name text-ellipsis primary-color font-bold">
+                                             Dapibus ac facilisis in
+                                        </span>
+                                        <div class="last-message-time">30/07/2018 </div>
+                                   </div>
+                                   <p class="last-message text-ellipsis">lorum ipsum dorum lorum ipsum dorum lorum ipsum dorum lorum ipsum dorum ipsum dorum</p>
+                                   <span class="label label-danger">offline</span>
+                              </div>
+                         </li>
+                        
+                    </ul>
+               </section>
+          </div>
+     </div>
+     <!--MY SCRIPT-->
+     <script src="js/custom.js"></script>
+</body>
+</html>
