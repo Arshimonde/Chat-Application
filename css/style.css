@@ -4,6 +4,28 @@ body{
     font-family:'Roboto Condensed', sans-serif;
 }
 body,html{height:100vh;}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    transition: all 0.25s ease-in-out;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #ddd; 
+     border-radius:10px;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #ccc; 
+}
 /*MY LITTLE FRAMEWORK START*/
 .app-font{font-family:'Roboto Condensed', sans-serif;}
      /*colors*/
@@ -23,6 +45,14 @@ body,html{height:100vh;}
 .text-right{text-align: right;}
 .text-left{text-align: left;}
 .text-center{text-align: center;}
+.profile-image{
+    height: 50px;
+    min-width: 50px;
+    width: 50px;
+    margin-right: 9px;
+    border-radius:50%;
+    overflow: hidden;
+}
 /*MY LITTLE FRAMEWORK END*/
 
 /*CLIENT INFO START*/
@@ -30,14 +60,96 @@ body,html{height:100vh;}
      border-right: 1px solid #ccc;
      height:100vh;
      overflow: auto;
+     padding-top:20px;
 }
-
+#client-info .profile-image{
+    height: 100px;
+    min-width: 100px;
+    width: 100px;
+    margin:auto;
+}
+#client-info .profile h2{font-size: 26px;}
+#client-info .list-group .list-group-item{
+    padding: 10px 15px;
+    margin-bottom: 20px;
+}
+#client-info .list-group .list-group-item h3{
+    font-size:26px;
+    margin-top: 0px;
+}
 /*CLIENT INFO END*/
 
 /*INBOX START*/
 #inbox{
      height:100vh;
-     overflow: auto;
+     position:relative;
+     padding-right: 0;
+     padding-left: 0;
+}
+    /*person name*/
+#inbox .chatting-with-name{
+    font-size: 17px;
+    border-bottom-width:2px; 
+    border-bottom-style:solid;
+    margin: 0;
+    padding: 19.5px;
+}
+#inbox .chatting-with-name i{
+    margin-right: 10px;
+}
+    /*message container*/
+#inbox .messages-container{
+    position: absolute;
+    padding: 5px 15px;
+    top:65px;
+    bottom:57px;
+    right:0;
+    left:0;
+    overflow: auto;
+}
+#inbox .messages-container .message{
+    display: flex;
+    padding: 20px;
+    background-color:#fff;
+    border-width: 1px;
+    border-style:solid;
+    border-radius:5px;
+    margin-bottom: 15px;
+}
+#inbox .messages-container .message p{margin-bottom: 0;font-size: 17px;}
+    /*chat input*/
+#inbox .chat-input-container{
+    position: absolute;
+    bottom:0;
+    right:0;
+    left:0;
+}
+#inbox #chat-input{
+    padding:25px 10px;
+    border-radius:0;
+    border-left: 0;
+    border-bottom:0;
+    font-size: 17px;
+}
+#inbox #chat-input:focus,#inbox #chat-input:active{
+    outline:0;
+    border-color:#ccc;
+    box-shadow: none;
+}
+#inbox #chat-input-addon{
+    border-radius:0;
+    padding: 0;
+    border-right: 0;
+}
+#inbox #chat-input-addon button{
+    width: 100%;
+    padding: 10px 20px;
+    border-radius:0;
+    font-size: 20px;
+}
+#inbox #chat-input-addon button:focus{
+    outline:0;
+    border-color:#ccc;
 }
 /*INBOX END*/
 
@@ -54,7 +166,8 @@ body,html{height:100vh;}
      margin: 0;
      padding-top: 15px;
      padding-bottom: 15px;
-     border-bottom: 1px solid #ccc;
+     border-bottom-width: 2px;
+     border-bottom-style: solid;
 }
 #people > h1 i{font-size: 22px;}
      /*people list*/
@@ -63,7 +176,7 @@ body,html{height:100vh;}
     left: 0;
     bottom: 0;
     right: 0;
-    top:59px;
+    top:61px;
     width: 100%;
     overflow: auto;
 }
@@ -80,14 +193,6 @@ body,html{height:100vh;}
 }
 #people .list-group li:first-of-type{border-top:0;}
 #people .list-group li:last-of-type{border-bottom:0;}
-#people .list-group li .profile-image{
-     height: 50px;
-     min-width: 50px;
-     width: 50px;
-     margin-right: 9px;
-     border-radius:50%;
-     overflow: hidden;
-}
 #people .list-group li .friend-info{
      flex:1 1 auto;
      min-width: 0;
