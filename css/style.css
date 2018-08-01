@@ -7,10 +7,12 @@ body,html{height:100vh;}
 /*MY LITTLE FRAMEWORK START*/
 .app-font{font-family:'Roboto Condensed', sans-serif;}
      /*colors*/
-.primary-color{color: #023669;}
-.primary-color-bg{background-color: #023669;}
-.secondary-color{color:#F18422;}
-.secondary-color-bg{color:#F18422;}
+.primary-color{color: #023669!important;}
+.primary-color-bg{background-color: #023669!important;}
+.primary-color-border{border-color:#023669!important;}
+.secondary-color{color:#F18422!important;}
+.secondary-color-bg{color:#F18422!important;}
+.secondary-color-border{border-color:#F18422!important;}
 .text-ellipsis{
      min-width: 0;
      white-space: nowrap;
@@ -27,6 +29,7 @@ body,html{height:100vh;}
 #client-info{
      border-right: 1px solid #ccc;
      height:100vh;
+     overflow: auto;
 }
 
 /*CLIENT INFO END*/
@@ -34,6 +37,7 @@ body,html{height:100vh;}
 /*INBOX START*/
 #inbox{
      height:100vh;
+     overflow: auto;
 }
 /*INBOX END*/
 
@@ -43,20 +47,32 @@ body,html{height:100vh;}
      padding-left: 0;
      padding-right:0;
      height:100vh;
+     position: relative;
 }
 #people > h1{
      font-size:26px;
      margin: 0;
-     padding-top: 10px;
-     padding-bottom: 10px;
+     padding-top: 15px;
+     padding-bottom: 15px;
      border-bottom: 1px solid #ccc;
 }
 #people > h1 i{font-size: 22px;}
      /*people list*/
+#people .list-group{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top:59px;
+    width: 100%;
+    overflow: auto;
+}
 #people .list-group li.friend{
      border-radius: 0;
      display: flex;
      align-items: center;
+     border-right:0;
+     border-left:0;
 }
 #people .list-group li.friend:hover{
      background-color:#eee;
