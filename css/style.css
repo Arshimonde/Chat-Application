@@ -93,6 +93,7 @@ body,html{height:100vh;}
     border-bottom-style:solid;
     margin: 0;
     padding: 19.5px;
+    padding-bottom: 22px;
 }
 #inbox .chatting-with-name i{
     margin-right: 10px;
@@ -115,6 +116,7 @@ body,html{height:100vh;}
     border-style:solid;
     border-radius:5px;
     margin-bottom: 15px;
+    align-items: center;
 }
 #inbox .messages-container .message p{margin-bottom: 0;font-size: 17px;}
     /*chat input*/
@@ -164,11 +166,12 @@ body,html{height:100vh;}
 #people > h1{
      font-size:26px;
      margin: 0;
-     padding-top: 15px;
-     padding-bottom: 15px;
+     padding: 15.5px 10px;
      border-bottom-width: 2px;
      border-bottom-style: solid;
+     overflow: hidden;
 }
+#people > h1 button{float: right;display: block;}
 #people > h1 i{font-size: 22px;}
      /*people list*/
 #people .list-group{
@@ -176,7 +179,7 @@ body,html{height:100vh;}
     left: 0;
     bottom: 0;
     right: 0;
-    top:61px;
+    top:64px;
     width: 100%;
     overflow: auto;
 }
