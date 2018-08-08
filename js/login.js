@@ -1,6 +1,6 @@
 // Initialize Firebase
 var config = {
-     apiKey: "AIzaSyAAsLctFVBHjNApNzC5rf9-DgDf_8O-JcA",
+     apiKey: API_KEY,
      authDomain: "camionsmessaging.firebaseapp.com",
      databaseURL: "https://camionsmessaging.firebaseio.com",
      projectId: "camionsmessaging",
